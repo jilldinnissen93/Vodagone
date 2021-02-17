@@ -1,10 +1,21 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="Vodagone4:war exploded">
     <output-path>$PROJECT_DIR$/target/Vodagone4</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>Vodagone4</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="Vodagone4" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.34" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.3.3" />
         </element>
       </element>
       <element id="directory" name="META-INF">
